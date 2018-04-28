@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	
+	<title>Capture an image</title>
+	
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="./src/css/app.css" rel="stylesheet">
+</head>
+<body>
+
+<main class="col-md-6 offset-md-3">
+	<div class="row">
+		<div class="col-md-6 offset-md-3">
+	        <div id="newImages"></div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6 center">
+			<video id="player" autoplay></video>
+			<br />
+			<strong>The video</strong>
+		</div>
+		<div class="col-md-6 center">
+			<canvas id="canvas" width="320px" height="240px"></canvas>
+			<br />
+			<strong>The canvas</strong>
+		</div>
+	</div>
+	<p>&nbsp;</p>
+	<div class="row"><div class="col-md-12 center">
+        <button class="btn btn-primary" id="capture-btn">Capture</button>
+	</div></div>
+    <div id="pick-image">
+        <label>Video is not supported. Pick an Image instead</label>
+        <input type="file" accept="image/*" id="image-picker">
+    </div>
+</main>
+
+<script src="./src/js/app.js"></script>
+</body>
+</html>
